@@ -3,10 +3,10 @@ from imager import Image as Img
 from imager import array_to_img as ati
 import time
 
-num_epochs = 5000
-total_inds = 1000
-circle_size = 5 
-k = 300
+num_epochs = 500
+total_inds = 100
+circle_size = 10
+k = 30
 
 def get_img(img_name, img_type=1):
     return Img(img_name, img_type) 
@@ -54,8 +54,24 @@ def draw_k_best(circles, n, new, inds):
 
     return k_best[0]
 
+print("Choose the number of epochs")
+num_epochs = int(input())
+
+print("Choose the population size")
+total_inds = int(input())
+
+print("Choose the maximum circle size")
+circle_size = int(input())
+
+k = total_inds//10 
+
+print("What is the name of the input image?")
 image_name = input()
 image_name = image_name.strip()
+
+print("What is the name of the output image?")
+otp_name = input()
+otp_name = otp_name.strip()
 
 img_obj = get_img(image_name, 0)
 image = img_obj.img
@@ -64,7 +80,11 @@ new_img = create_new_img(image)
 best = (0, 0, 0)
 
 first = time.time()
+epoch_time = 0
 for epoch in range(num_epochs):
+    print(f'Generation: {epoch}')
+    print(f'Estimated time left: {(num_epochs-epoch)*(time.time() - epoch_time)/60.0} minutes')
+    epoch_time = time.time()
     inds = get_individuals(image, total_inds)
     inds = np.array(inds)
     inds = np.rint(inds)
@@ -81,5 +101,5 @@ for epoch in range(num_epochs):
 
 elapsed = time.time() - first
 array_to_img(new_img)
-cv.imwrite('genetic_'+image_name, new_img)
+cv.imwrite(otp_name, new_img)
 print(f"It took me {num_epochs} epochs, {k * num_epochs} circles and {elapsed}s to draw your image")
