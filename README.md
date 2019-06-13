@@ -29,3 +29,4 @@ You can experiment it yourself by changing the parameters and using your own ima
 - The idea of mutation is very important here, but I didn't use it.
 - Make the progress and estimated time better to understand haha.
 - Make it work to RGB as well. As of right now it's only grayscale, and if you tweak the code around it won't work.
+- Video mode: it will create a timelapse.
