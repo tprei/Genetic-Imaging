@@ -3,10 +3,10 @@ from imager import Image as Img
 from imager import array_to_img as ati
 import time
 
-num_epochs = 500
-total_inds = 100
-circle_size = 10
-k = 30
+num_epochs = 10
+total_inds = 1000
+circle_size = 2 
+k = 10
 
 def get_img(img_name, img_type=1):
     return Img(img_name, img_type) 
