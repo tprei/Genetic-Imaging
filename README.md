@@ -11,10 +11,15 @@ Since there are a few parameters that can be tweaked on, results may differ, and
 You can experiment it yourself by changing the parameters and using your own images.
 ### How to run? It's quite simple :).
 1. You can clone this repository by doing:
+
 `https://github.com/thiagop-usp/Genetic-Imaging.git`
+
 2. After that, you will need some python3 libraries, so you can run:
+
 `pip3 install -r requirements.txt`
+
 3. Then make sure you're running it with Python 3.7 (f-strings are the best):
+
 `python3 genetic.py`
 
 ### Improvements yet to be done:
