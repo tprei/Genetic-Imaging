@@ -21,5 +21,3 @@ def array_to_img(array):
     cv.waitKey(0)
     cv.destroyAllWindows()
 
-def draw_circle(array, center, radius=10, color=(255, 255, 255), thickness=-1, image_type=1):
-    cv.circle(array, center, radius, color, thickness, image_type)
