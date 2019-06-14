@@ -11,10 +11,15 @@ Since there are a few parameters that can be tweaked on, results may differ, and
 You can experiment it yourself by changing the parameters and using your own images.
 ### How to run? It's quite simple :).
 1. You can clone this repository by doing:
+
 `https://github.com/thiagop-usp/Genetic-Imaging.git`
+
 2. After that, you will need some python3 libraries, so you can run:
+
 `pip3 install -r requirements.txt`
+
 3. Then make sure you're running it with Python 3.7 (f-strings are the best):
+
 `python3 genetic.py`
 
 ### Improvements yet to be done:
@@ -23,4 +28,5 @@ You can experiment it yourself by changing the parameters and using your own ima
 - There are much better ways to reproduce the individuals (and some better ways to maintain good ones
 - The idea of mutation is very important here, but I didn't use it.
 - Make the progress and estimated time better to understand haha.
-- Make it work to RGB as well. As of right now it's only grayscale, and if you tweak the code around it won't work.
+- Make it work to grayscale and RGB as well. As of right now it's only black and white, and if you tweak the code around it won't work.
+- Video mode: it will create a timelapse.
