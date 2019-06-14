@@ -30,3 +30,7 @@ You can experiment it yourself by changing the parameters and using your own ima
 - Make the progress and estimated time better to understand haha.
 - Make it work to grayscale and RGB as well. As of right now it's only black and white, and if you tweak the code around it won't work.
 - Video mode: it will create a timelapse.
+
+### Updates:
+- Works with greyscale now. RGB still in progress.
+- RGB and Rectangles are giving me lots of bugs, not working well yet =(.
